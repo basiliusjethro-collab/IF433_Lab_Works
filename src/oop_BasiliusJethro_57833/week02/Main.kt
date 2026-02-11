@@ -8,16 +8,20 @@ fun main() {
     print("Masukkan Nama: ")
     val name = scanner.nextLine()
 
-    print("Masukkan NIM (5 digit): ")
+    print("Masukkan NIM: ")
     val nim = scanner.nextLine()
 
-    if (nim.length != 5) {
-        println("NIM tidak valid. Program dihentikan.")
-        return
+    println("Pilih Jalur:")
+    println("1. Dengan Jurusan")
+    println("2. Tanpa Jurusan")
+    val choice = scanner.nextInt()
+    scanner.nextLine()
+
+    val student = if (choice == 1) {
+        print("Masukkan Jurusan: ")
+        val major = scanner.nextLine()
+        Student(name, nim, major)
+    } else {
+        Student(name, nim)
     }
-
-    print("Masukkan Jurusan: ")
-    val major = scanner.nextLine()
-
-    val student = Student(name, nim, major)
 }
