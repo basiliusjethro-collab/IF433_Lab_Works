@@ -4,6 +4,7 @@ class Student(
     val name: String,
     val nim: String,
     var major: String
+    val gpa: Double = 0.0
 ) {
 
     init {
