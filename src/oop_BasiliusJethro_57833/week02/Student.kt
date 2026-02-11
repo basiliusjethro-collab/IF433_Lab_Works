@@ -13,4 +13,7 @@ class Student(
             println("LOG: Student $name berhasil dibuat.")
         }
     }
+
+    constructor(name: String, nim: String) :
+            this(name, nim, "Non-Matriculated")
 }
