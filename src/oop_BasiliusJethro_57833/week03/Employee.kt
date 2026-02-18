@@ -4,6 +4,9 @@ class Employee(
     val name: String,
     salary: Int
 ) {
+    fun increasePerformance() {
+        TODO("Not yet implemented")
+    }
 
     var salary: Int = salary
         set(value) {
@@ -13,6 +16,8 @@ class Employee(
                 println("Salary cannot be negative!")
             }
         }
+    val tax: Int
+        get() = salary / 10
 }
 
 private var performanceRating: Int = 0
@@ -24,3 +29,4 @@ fun updateRating(newRating: Int) {
         println("Rating must be between 1 and 5")
     }
 }
+
