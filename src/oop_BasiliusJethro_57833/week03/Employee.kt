@@ -30,3 +30,4 @@ fun updateRating(newRating: Int) {
     }
 }
 
+//For checkpoint 6 (Already Clean
