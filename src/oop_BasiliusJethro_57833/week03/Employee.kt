@@ -14,3 +14,13 @@ class Employee(
             }
         }
 }
+
+private var performanceRating: Int = 0
+
+fun updateRating(newRating: Int) {
+    if (newRating in 1..5) {
+        performanceRating = newRating
+    } else {
+        println("Rating must be between 1 and 5")
+    }
+}
