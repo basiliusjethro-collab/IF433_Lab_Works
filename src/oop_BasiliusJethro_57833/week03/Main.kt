@@ -1,5 +1,6 @@
 package oop_BasiliusJethro_57833.week03
 
+import oop_57833_BasiliusJethro.week03.Player
 import oop_57833_BasiliusJethro.week03.Weapon
 
 fun main() {
@@ -13,6 +14,13 @@ fun main() {
 
     println("Pajak yang harus dibayar: ${e.tax}")
 }
+
+val player = Player("Basilius")
+
+// player.xp ❌ (harus error)
+
+player.addXp(50)
+player.addXp(60)
 
 val sword = Weapon("Excalibur", 300)
 
