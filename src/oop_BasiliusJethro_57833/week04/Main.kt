@@ -18,4 +18,15 @@ fun main() {
     tesla.openTrunk()
     tesla.honk()           // Akan memanggil method honk() dari Car
     tesla.accelerate()     // Akan memanggil method accelerate() versi ElectricCar (final)
+
+    println("\n=== Task 2: Employee Hierarchy ===")
+    println("--- Testing Manager ---")
+    val manager = Manager(name = "Budi", baseSalary = 10000000)
+    manager.work()
+    println("Bonus manager: Rp ${manager.calculateBonus()}")
+
+    println("\n--- Testing Developer ---")
+    val developer = Developer(name = "Ani", baseSalary = 8000000, programmingLanguage = "Kotlin")
+    developer.work()
+    println("Bonus developer: Rp ${developer.calculateBonus()}")
 }
