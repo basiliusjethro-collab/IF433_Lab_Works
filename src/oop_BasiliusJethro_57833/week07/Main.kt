@@ -29,4 +29,7 @@ fun main() {
         is ApiResponse.Error -> "Error"
         ApiResponse.Loading -> "Loading..."
     }
+
+    GameManager.startGame()
+    GameManager.startGame()
 }
