@@ -5,3 +5,8 @@ fun main() {
 
     val city = order.customer?.address?.city ?: "Unknown City"
     println("City: $city")
+
+    order.customer?.address?.city?.let {
+        println("City found: $it")
+    }
+}
