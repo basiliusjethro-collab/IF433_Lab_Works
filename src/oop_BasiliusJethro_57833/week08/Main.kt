@@ -9,4 +9,6 @@ fun main() {
     order.customer?.address?.city?.let {
         println("City found: $it")
     }
+
+    val items: List<Any> = listOf("Hello", 123, "World", 45.6)
 }
