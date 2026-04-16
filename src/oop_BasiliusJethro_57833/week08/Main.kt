@@ -24,5 +24,11 @@ fun main() {
     println("Checkpoint 9 executed")
 
     val nullString: String? = null
-    println(nullString!!)
+
+    try {
+        val safeValue = requireNotNull(nullString) { "Value cannot be null!" }
+        println(safeValue)
+    } catch (e: IllegalArgumentException) {
+        println(e.message)
+    }
 }
