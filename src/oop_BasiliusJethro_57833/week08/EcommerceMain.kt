@@ -22,3 +22,4 @@ fun main() {
         }
     }
 }
+println("Checkpoint 20 executed")
