@@ -22,4 +22,7 @@ fun main() {
         println(value)
     }
     println("Checkpoint 9 executed")
+
+    val nullString: String? = null
+    println(nullString!!)
 }
