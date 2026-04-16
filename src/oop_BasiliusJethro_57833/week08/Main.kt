@@ -31,4 +31,6 @@ fun main() {
     } catch (e: IllegalArgumentException) {
         println(e.message)
     }
+    val result = LegacyJavaAPI.getData()!!
+    println("Java result: $result")
 }
