@@ -8,4 +8,7 @@ fun main() {
 
     println(immutableList)
     println(mutableList)
+
+    val numbers = setOf(1, 2, 2, 3, 3, 4)
+    println(numbers)
 }
