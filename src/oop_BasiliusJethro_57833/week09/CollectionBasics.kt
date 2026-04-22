@@ -11,4 +11,11 @@ fun main() {
 
     val numbers = setOf(1, 2, 2, 3, 3, 4)
     println(numbers)
+
+    val studentMap = mapOf(
+        "Alice" to 90,
+        "Bob" to 85
+    )
+
+    println(studentMap)
 }
