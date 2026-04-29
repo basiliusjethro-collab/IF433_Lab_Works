@@ -16,4 +16,6 @@ fun main() {
     val txRepo = WalletRepository<Transaction>()
     txRepo.add(Transaction("TX1", 100.0))
     txRepo.add(Transaction("TX2", 250.0))
+
+    println("Checkpoint 20 Executed")
 }
