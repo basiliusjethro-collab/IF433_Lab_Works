@@ -15,4 +15,7 @@ fun main() {
 
     val result = getData("Hello")
     println(result)
+
+    val max = findMax(10, 20)
+    println("Max: $max")
 }
