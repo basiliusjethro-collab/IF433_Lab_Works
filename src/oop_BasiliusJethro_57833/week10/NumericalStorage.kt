@@ -5,3 +5,7 @@ class NumericalStorage<T : Number>(private val num: T) {
         return num.toDouble()
     }
 }
+
+fun <T> findMax(a: T, b: T): T where T : Comparable<T> {
+    return if (a > b) a else b
+}
