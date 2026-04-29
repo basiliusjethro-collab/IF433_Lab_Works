@@ -6,4 +6,7 @@ fun main() {
 
     println(intBox.getItem())
     println(stringBox.getItem())
+
+    val pair = PairBox("Age", 20)
+    println("${pair.key} = ${pair.value}")
 }
