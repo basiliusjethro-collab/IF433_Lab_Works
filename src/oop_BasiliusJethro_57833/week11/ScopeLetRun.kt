@@ -6,4 +6,11 @@ fun main() {
     name?.let {
         println("Length: ${it.length}")
     }
+    fun main() {
+        val result = "Hello".run {
+            this.length * 2
+        }
+
+        println(result)
+    }
 }

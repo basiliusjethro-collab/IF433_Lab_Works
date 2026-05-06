@@ -6,11 +6,3 @@ fun main() {
     println(text.hello())
     println(text.safeLength())
 }
-
-fun main() {
-    val result = "Hello".run {
-        this.length * 2
-    }
-
-    println(result)
-}
