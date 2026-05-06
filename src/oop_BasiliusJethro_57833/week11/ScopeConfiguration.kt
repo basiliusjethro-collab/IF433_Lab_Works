@@ -16,4 +16,9 @@ fun main() {
     user.also {
         println("User created: ${it.name}")
     }
+
+    with(user) {
+        println(name)
+        println(age)
+    }
 }
