@@ -12,4 +12,8 @@ fun main() {
     }
 
     println(user.name)
+
+    user.also {
+        println("User created: ${it.name}")
+    }
 }
