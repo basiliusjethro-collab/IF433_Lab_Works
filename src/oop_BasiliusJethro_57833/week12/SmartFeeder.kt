@@ -27,4 +27,25 @@ fun main() {
 
     var currentKibbleStock = 50
 
+    try {
+
+        currentKibbleStock = dispenseKibble(
+            requestedGram = 80,
+            availableGram = currentKibbleStock,
+            isJammed = false
+        )
+
+    } catch (e: DispenserJamException) {
+
+        println("Error Dispenser: ${e.message}")
+
+    } catch (e: FoodEmptyException) {
+
+        println("Error Stok: ${e.message}")
+
+    } catch (e: Exception) {
+
+        println("Error Umum: ${e.message}")
+    }
+
 }
