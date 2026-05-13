@@ -22,3 +22,9 @@ fun dispenseKibble(
         throw DispenserJamException()
     }
 }
+
+fun main() {
+
+    var currentKibbleStock = 50
+
+}
