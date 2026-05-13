@@ -10,3 +10,13 @@ fun divide(a: Int, b: Int): Int {
         println("Operasi selesai.")
     }
 }
+
+fun main() {
+    val result = try {
+        10 / 2
+    } catch (e: ArithmeticException) {
+        0
+    }
+
+    println("Hasil: $result")
+}
