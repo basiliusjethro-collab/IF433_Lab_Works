@@ -16,4 +16,14 @@ fun main() {
     }
 
     println("Safe Result: $safeResult")
+
+    runCatching {
+        10 / 0
+    }
+        .onSuccess {
+            println("Sukses: $it")
+        }
+        .onFailure {
+            println("Gagal: ${it.message}")
+        }
 }
