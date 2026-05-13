@@ -71,4 +71,5 @@ fun main() {
 
             println("(Opsional: Berikan chicken jerky secara manual)")
         }
+    println("Checkpoint 20 executed")
 }
