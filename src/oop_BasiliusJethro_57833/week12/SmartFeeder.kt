@@ -47,5 +47,7 @@ fun main() {
 
         println("Error Umum: ${e.message}")
     }
-
+    finally {
+        println("Siklus pengecekan dispenser pagi selesai.")
+    }
 }
