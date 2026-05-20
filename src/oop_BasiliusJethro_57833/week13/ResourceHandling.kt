@@ -9,4 +9,8 @@ fun main() {
     writer.println("Manual close example")
 
     writer.close()
+
+    File("safe.txt").printWriter().use { writer ->
+        writer.println("Using use block safely")
+    }
 }
