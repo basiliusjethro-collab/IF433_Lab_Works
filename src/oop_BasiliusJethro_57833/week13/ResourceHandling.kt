@@ -13,4 +13,11 @@ fun main() {
     File("safe.txt").printWriter().use { writer ->
         writer.println("Using use block safely")
     }
+
+    File("safe.txt").bufferedReader().use { reader ->
+
+        reader.forEachLine {
+            println(it)
+        }
+    }
 }
